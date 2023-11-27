@@ -1,0 +1,37 @@
+
+<html>
+    
+
+    <h1>Here is the bill</h1>
+    <body>
+        <form>
+        <label>Product Name:</label>
+        <h3>{{mobilename}}</h3>
+
+        <label>Product Price:</label>
+        <h3>{{mobilenamt}}</h3>
+
+        <label>Product Quantity:</label>
+        <input type="text" placeholder="Enter the Quantity" required >
+
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+        
+        <label>Phone number</label>
+        <input type="text" placeholder="Enter your Phone No" ng-required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Address</label>
+        <input type="text" placeholder="Enter your address " ng-required>
+
+
+        <input class="btn btn-primary" type="submit" value="Place order" (click)="myFunction22()">
+        </form>
+
+        
+    </body>
+    <h3><input class="btn btn-success" type="button" value="Logout" (click)="gotologin()"></h3>
+    <h3><input class="btn btn-success" type="button" value="Buy more!" (click)="gotomobile()"></h3>
+</html>

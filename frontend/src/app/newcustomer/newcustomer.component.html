@@ -1,0 +1,27 @@
+<html>
+<head>
+        
+</head>
+<body><H1>Welcome to mobile store register here</H1>
+    <br>
+    <form>
+        <label>username</label>
+        <input type="text" [(ngModel)]="uname" placeholder="Enter the username" [ngModelOptions]="{standalone:true}" id="uname">
+    
+        <br>
+        <label>password</label>
+        <input type="text" [(ngModel)]="password" placeholder="Enter the password" [ngModelOptions]="{standalone:true}" id="password">
+        <br>
+        <label>age</label>
+        <input type="text" [(ngModel)]="age" placeholder="Enter your age" [ngModelOptions]="{standalone:true}" id="age">
+        <br>
+        <label>phoneno</label>
+        <input type="text" [(ngModel)]="phoneno" placeholder="Enter the phoneno" [ngModelOptions]="{standalone:true}" id="phoneno">
+        <br>
+        <input type="button" (click)="newuser()" value="Register">
+        <input type="button" value="Login" (click)="gotologin()">
+    
+        </form>
+        <h2>{{validated}}</h2>
+</body>
+</html>
